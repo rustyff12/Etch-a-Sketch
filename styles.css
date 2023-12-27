@@ -1,0 +1,33 @@
+/* ============ Root ============ */
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+/* ============ Reset ============ */
+/* Box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body, 
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+#grid-container {
+    border: 1px solid red;
+    display: grid;
+    gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows));
+    grid-template-columns: repeat(var(--grid-cols));
+}
+
+.grid-container-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
